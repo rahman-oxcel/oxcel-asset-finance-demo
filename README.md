@@ -1,4 +1,4 @@
-# Oxcel Asset Finance — protected preview
+# Oxcel Asset Finance, protected preview
 
 A password-protected live preview of the Oxcel Asset Finance loan-writing platform prototype.
 
@@ -7,7 +7,7 @@ A password-protected live preview of the Oxcel Asset Finance loan-writing platfo
 
 ## How the protection works
 
-The entire application (HTML, CSS, JavaScript and assets) is bundled into one file and encrypted with AES-256-GCM. The key is derived from the password using PBKDF2 (SHA-256, 250,000 iterations). Nothing is readable, and the app cannot run, until the correct password is entered — the decryption happens in the browser. There is no server and no database; the prototype keeps its demo state in the browser's local storage only.
+The entire application (HTML, CSS, JavaScript and assets) is bundled into one file and encrypted with AES-256-GCM. The key is derived from the password using PBKDF2 (SHA-256, 250,000 iterations). Nothing is readable, and the app cannot run, until the correct password is entered, the decryption happens in the browser. There is no server and no database; the prototype keeps its demo state in the browser's local storage only.
 
 To rotate the password or rebuild, regenerate `index.html` from the source project and push.
 
